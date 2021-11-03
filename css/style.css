@@ -44,6 +44,18 @@ html{
   padding-left: 20px;
 }
 
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav ul {
+    margin-top: 20px;
+  }
+}
+
 /* Main */
 
 .main section {
@@ -66,6 +78,7 @@ html{
 .item {
   margin: 0 3%;
   border: 1px solid black;
+  border-radius: 15px;
   padding: 30px;
 }
 
@@ -83,6 +96,7 @@ html{
 }
 
 .item a {
+  display: inline-block;
   border: 1px solid black;
   border-radius: 15px;
   background-color: gray;
@@ -92,6 +106,35 @@ html{
 
 .item a:hover {
   color: pink;
+}
+
+/* @media (max-width: 768px) {
+  .main-items {
+    margin: 0% 5% 2% 5%;
+  }
+  .item {
+    margin: 0 1%;
+  }
+  .item p {
+    margin-bottom: 20px
+  }
+  .item a {
+    padding: 10px;
+    
+  }
+} */
+@media (max-width: 768px) {
+  .main-items {
+    flex-direction: column;
+    margin: 0% 5% 2% 5%;
+  }
+  .item {
+    margin: 5% 1%;
+  }
+  .main section h1 {
+    font-size: 36px;
+    margin: 20px 10px 0 10px;
+  }
 }
 
 /* Footer */
