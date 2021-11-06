@@ -16,6 +16,7 @@ ul {
 
 html{
   scroll-behavior: smooth;
+  background-color: #c4d5e6;
 }
 
 /* Container */
@@ -27,12 +28,13 @@ html{
 
 /* Nav */
 
+
+
 .nav {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
-  border: 1px solid red;
-  background: yellow;
+  padding: 30px;
+  background: #23395B;
 }
 
 .nav ul{
@@ -41,7 +43,14 @@ html{
 }
 
 .nav ul li {
-  padding-left: 20px;
+  padding-left: 30px;
+}
+
+.nav ul li a{
+  color: #effdfa;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0px 0px 2px #f3f3f3;
 }
 
 @media (max-width: 768px) {
@@ -67,6 +76,8 @@ html{
 .main section h1 {
   font-size: 64px;
   margin: 40px 0;
+  color: #161925;
+  text-shadow: 0px 0px 2px #161925;
 }
 
 .main-items {
@@ -77,9 +88,10 @@ html{
 
 .item {
   margin: 0 3%;
-  border: 1px solid black;
   border-radius: 15px;
   padding: 30px;
+  background-color: #f3f3f3;
+  box-shadow: 2px 4px 5px rgb(68, 68, 68);
 }
 
 .item img {
@@ -89,23 +101,34 @@ html{
 
 .item h2, .item p {
   padding: 10px 0;
+  color: #161925;
+  text-shadow: 0px 0px 2px #161925;
+}
+
+.item h2 {
+  font-size: 32px;
 }
 
 .item p {
-  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.item p {
+  margin-bottom: 20px;
 }
 
 .item a {
   display: inline-block;
-  border: 1px solid black;
   border-radius: 15px;
-  background-color: gray;
+  background-color: rgb(240, 168, 75);
   padding: 15px;
-  color: black;
+  color: #161925;
+  font-size: 18px;
+  
 }
 
 .item a:hover {
-  color: pink;
+  transform: scale(1.1);
 }
 
 /* @media (max-width: 768px) {
@@ -140,7 +163,7 @@ html{
 /* Footer */
 
 .footer {
-  background-color: greenyellow;
+  background-color: #23395B;
   padding: 20px;
 }
 
@@ -150,5 +173,6 @@ html{
 }
 
 .footer ul li a {
-  color: black;
+  color: #CBF7ED;
+  font-size: 24px;
 }
