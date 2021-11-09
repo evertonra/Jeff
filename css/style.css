@@ -198,6 +198,7 @@ html{
   }
   .item {
     margin: 5% 1%;
+    width: 80%;
   }
   .main section h1 {
     font-size: 36px;
